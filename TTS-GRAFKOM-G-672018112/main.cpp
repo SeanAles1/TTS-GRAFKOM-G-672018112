@@ -177,7 +177,26 @@ void Render() {
 
 	//kotak pojok - 1
 	Pola3();
+	//kotak pojok - 2
+	x += 470;
+	Pola3();
 
+	x = 0;
+	y = 0;
+	//kotak pojok - 3
+	x = 0;
+	y += 470;
+	Pola3();
+
+	x = 0;
+	y = 0;
+	//kotak pojok - 4
+	x += 470;
+	y += 470;
+	Pola3();
+
+	x = 0;
+	y = 0;
 	glFlush();
 }
 
