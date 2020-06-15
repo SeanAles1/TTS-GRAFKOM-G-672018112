@@ -129,6 +129,21 @@ void Pola3() {
 	glEnd();
 }
 
+void Pola4() {
+	glColor3ub(255, 238, 204);
+	glPointSize(0.000001f);
+	glBegin(GL_POINTS);
+
+	//Kotak Putih
+	for (int i = 1; i <= 30; i++) {
+		glVertex2f(0 + x, 12.5 + y);
+		x += 30;
+	}
+	x = 0;
+	y = 0;
+	glEnd();
+}
+
 void Render() {
 	glClearColor(0, 0, 0, 1);
 	glClear(GL_COLOR_BUFFER_BIT);
@@ -197,6 +212,16 @@ void Render() {
 
 	x = 0;
 	y = 0;
+
+	//Titik
+	for (int j = 1; j <= 60 ; j += 2) {
+		Pola4();
+		y = y + 10*j;
+	}
+	
+	x = 0;
+	y = 0;
+	
 	glFlush();
 }
 
@@ -207,6 +232,7 @@ int main(int argc, char** argv) {
 	glutInitWindowSize(500, 500);
 	glutCreateWindow("Sean Alessandro Pattirane - 672018112");
 	glutDisplayFunc(Render);
+	glEnable(GL_POINT_SMOOTH);
 	gluOrtho2D(0, 500, 500, 0);
 	//Selesai Inisialisasi
 	glutMainLoop();
