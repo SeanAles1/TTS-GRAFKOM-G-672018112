@@ -85,6 +85,50 @@ void Pola2() {
 	glEnd();
 }
 
+void Pola3() {
+	glColor3ub(255, 238, 204);
+	glPointSize(2);
+	glBegin(GL_POLYGON);
+
+	//Kotak Putih
+	glVertex2f(1 + x, 11.5 + y);
+	glVertex2f(20.5 + x, 1 + y);
+	glVertex2f(30 + x, 22 + y);
+	glVertex2f(10.5 + x, 30 + y);
+
+	glEnd();
+
+	//Kotak - Hitam
+	glColor3ub(0, 0, 0);
+	glBegin(GL_POLYGON);
+
+	glVertex2f(10.5 + x, 11.5 + y);
+	glVertex2f(10.5 + x, 22 + y);
+	glVertex2f(20.5 + x, 22 + y);
+	glVertex2f(20.5 + x, 11.5 + y);
+	
+	glEnd();
+
+	//Garis
+	glColor3ub(0, 0, 0);
+	glBegin(GL_LINES);
+
+	//1
+	glVertex2f(1 + x, 11.5 + y);
+	glVertex2f(10.5 + x, 11.5 + y);
+	//2
+	glVertex2f(19.5 + x, 1 + y);
+	glVertex2f(19.5 + x, 11.5 + y);
+	//3
+	glVertex2f(30 + x, 22 + y);
+	glVertex2f(19.5 + x, 22 + y);
+	//4
+	glVertex2f(10.5 + x, 30 + y);
+	glVertex2f(10.5+ x, 20.5 + y);
+
+	glEnd();
+}
+
 void Render() {
 	glClearColor(0, 0, 0, 1);
 	glClear(GL_COLOR_BUFFER_BIT);
@@ -130,6 +174,9 @@ void Render() {
 
 	x = 0;
 	y = 0;
+
+	//kotak pojok - 1
+	Pola3();
 
 	glFlush();
 }
