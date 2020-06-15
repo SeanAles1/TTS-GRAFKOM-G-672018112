@@ -88,10 +88,49 @@ void Pola2() {
 void Render() {
 	glClearColor(0, 0, 0, 1);
 	glClear(GL_COLOR_BUFFER_BIT);
-	
+	//Layer 1
 	Pola1();
 	Pola2();
-	
+	x += 200;
+	Pola1();
+	Pola2();
+
+	x = 0;
+	//Layer 2
+	;	y = 100;
+	x -= 100;
+	Pola2();
+	x += 200;
+	Pola1();
+	Pola2();
+	x += 200;
+	Pola1();
+
+	x = 0;
+	y = 0;
+	//Layer 3
+	y = 200;
+	Pola1();
+	Pola2();
+	x += 200;
+	Pola1();
+	Pola2();
+
+	x = 0;
+	y = 0;
+	//Layer 4
+	y = 300;
+	x -= 100;
+	Pola2();
+	x += 200;
+	Pola1();
+	Pola2();
+	x += 200;
+	Pola1();
+
+	x = 0;
+	y = 0;
+
 	glFlush();
 }
 
