@@ -1,8 +1,12 @@
+#define _USE_MATH_DEFINES
 #include <iostream>
 #include <GL/freeglut.h>
+#include <math.h>
 
 int x = 0;
 int y = 0;
+int xLingkaran = 35;
+int yLingkaran = 12;
 
 void Pola1() {
 	glColor3ub(255, 238, 204);
@@ -144,6 +148,19 @@ void Pola4() {
 	glEnd();
 }
 
+void Pola5(double r, int vertex) {
+	double ngon = (double)vertex;
+	//Algoritma Orbit
+	glBegin(GL_LINE_LOOP);
+	glColor3ub(103, 103, 103);
+	for (int i = 0; i < vertex; i++) {
+		double a = r * cos(2 * M_PI * i / vertex);
+		double b = r * sin(2 * M_PI * i / vertex);
+		glVertex2d(a + xLingkaran, b + yLingkaran);
+	}
+	glEnd();
+}
+
 void Render() {
 	glClearColor(0, 0, 0, 1);
 	glClear(GL_COLOR_BUFFER_BIT);
@@ -156,7 +173,7 @@ void Render() {
 
 	x = 0;
 	//Layer 2
-	;	y = 100;
+	y = 100;
 	x -= 100;
 	Pola2();
 	x += 200;
@@ -222,6 +239,27 @@ void Render() {
 	x = 0;
 	y = 0;
 	
+	//Design Backround
+	for (int k = 1; k <= 15; k++) {
+		Pola5(7, 300);
+		xLingkaran += 30;
+	}
+	xLingkaran = 52;
+	//Design Backround
+	yLingkaran += 14;
+	for (int k = 1; k <= 14; k++) {
+		Pola5(7, 300);
+		xLingkaran += 30;
+	}
+	xLingkaran = 8;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		Pola5(7, 300);
+		xLingkaran += 30;
+	}
+
+	xLingkaran = 35;
+	yLingkaran = 12;
 	glFlush();
 }
 
