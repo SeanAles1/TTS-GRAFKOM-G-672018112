@@ -212,7 +212,7 @@ void Render() {
 	//kotak pojok - 2
 	x += 470;
 	Pola3();
-
+	
 	x = 0;
 	y = 0;
 	//kotak pojok - 3
@@ -257,7 +257,38 @@ void Render() {
 		Pola5(7, 300);
 		xLingkaran += 30;
 	}
-
+	xLingkaran = 22;
+	yLingkaran += 14;
+	for (int k = 1; k <= 16; k++) {
+		if (k >= 1 && k <=2 || k >= 4 && k <= 6 || k >= 8 && k <= 9 || k > 10 && k <= 13 || k >= 15 && k <= 16) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	xLingkaran = 8;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 3 || k >= 6 && k <= 6 || k == 9 || k >= 12 && k <= 13  ||k >= 16 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	xLingkaran = 22;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 2 || k == 9 || k >= 15 && k <= 16) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	xLingkaran = 8;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 2 || k == 9 || k >= 16 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
 	xLingkaran = 35;
 	yLingkaran = 12;
 	glFlush();
