@@ -135,7 +135,7 @@ void Pola3() {
 
 void Pola4() {
 	glColor3ub(255, 222, 173);
-	glPointSize(0.000001f);
+	glPointSize(2);
 	glBegin(GL_POINTS);
 
 	//Kotak Putih
@@ -241,24 +241,26 @@ void Render() {
 	x = 0;
 	y = 0;
 	
-	//Design Backround
+	//Bulat Layer 1
 	for (int k = 1; k <= 15; k++) {
 		Pola5(7, 300);
 		xLingkaran += 30;
 	}
+	//Bulat Layer 2
 	xLingkaran = 52;
-	//Design Backround
 	yLingkaran += 14;
 	for (int k = 1; k <= 14; k++) {
 		Pola5(7, 300);
 		xLingkaran += 30;
 	}
+	//Bulat Layer 3
 	xLingkaran = 8;
 	yLingkaran += 14;
 	for (int k = 1; k <= 17; k++) {
 		Pola5(7, 300);
 		xLingkaran += 30;
 	}
+	//Bulat Layer 4
 	xLingkaran = 22;
 	yLingkaran += 14;
 	for (int k = 1; k <= 16; k++) {
@@ -267,6 +269,7 @@ void Render() {
 		}
 		xLingkaran += 30;
 	}
+	//Bulat Layer 5
 	xLingkaran = 8;
 	yLingkaran += 14;
 	for (int k = 1; k <= 17; k++) {
@@ -275,6 +278,7 @@ void Render() {
 		}
 		xLingkaran += 30;
 	}
+	//Bulat Layer 6
 	xLingkaran = 22;
 	yLingkaran += 14;
 	for (int k = 1; k <= 17; k++) {
@@ -283,6 +287,7 @@ void Render() {
 		}
 		xLingkaran += 30;
 	}
+	//Bulat Layer 7
 	xLingkaran = 8;
 	yLingkaran += 14;
 	for (int k = 1; k <= 17; k++) {
@@ -291,14 +296,16 @@ void Render() {
 		}
 		xLingkaran += 30;
 	}
+	//Bulat Layer 8
 	xLingkaran = 22;
 	yLingkaran += 14;
-	for (int k = 1; k <= 17; k++) {
-		if (k == 1|| k == 7 || k ==  10 || k == 12||k >= 16 && k <= 17) {
+	for (int k = 1; k <= 16; k++) {
+		if (k == 1|| k == 7 || k ==  10 || k == 12||k == 16) {
 			Pola5(7, 300);
 		}
 		xLingkaran += 30;
 	}
+	//Bulat Layer 9
 	xLingkaran = 8;
 	yLingkaran += 14;
 	for (int k = 1; k <= 17; k++) {
@@ -307,14 +314,16 @@ void Render() {
 		}
 		xLingkaran += 30;
 	}
+	//Bulat Layer 10
 	xLingkaran = 22;
 	yLingkaran += 14;
-	for (int k = 1; k <= 17; k++) {
-		if (k >= 1 && k <= 2 || k >= 5 && k <= 6|| k >= 8 && k <= 9 ||k == 12 || k >= 15 && k <= 17) {
+	for (int k = 1; k <= 16; k++) {
+		if (k >= 1 && k <= 2 || k >= 5 && k <= 6|| k >= 8 && k <= 9 ||k == 12 || k >= 15 && k <= 16) {
 			Pola5(7, 300);
 		}
 		xLingkaran += 30;
 	}
+	//Bulat Layer 11
 	xLingkaran = 8;
 	yLingkaran += 14;
 	for (int k = 1; k <= 17; k++) {
@@ -323,14 +332,16 @@ void Render() {
 		}
 		xLingkaran += 30;
 	}
+	//Bulat Layer 12
 	xLingkaran = 22;
 	yLingkaran += 14;
-	for (int k = 1; k <= 17; k++) {
-		if (k >= 1 && k <= 2 || k == 5 || k >= 8 && k <= 9 || k == 12 || k >= 15 && k <= 17) {
+	for (int k = 1; k <= 16; k++) {
+		if (k >= 1 && k <= 2 || k == 5 || k >= 8 && k <= 9 || k == 12 || k >= 15 && k <= 16) {
 			Pola5(7, 300);
 		}
 		xLingkaran += 30;
 	}
+	//Bulat Layer 13
 	xLingkaran = 8;
 	yLingkaran += 14;
 	for (int k = 1; k <= 17; k++) {
@@ -339,14 +350,16 @@ void Render() {
 		}
 		xLingkaran += 30;
 	}
+	//Bulat Layer 14
 	xLingkaran = 22;
 	yLingkaran += 14;
-	for (int k = 1; k <= 17; k++) {
-		if (k == 1 || k == 12 || k >= 16 && k <= 17) {
+	for (int k = 1; k <= 16; k++) {
+		if (k == 1 || k == 12 || k >= 16 && k <= 16) {
 			Pola5(7, 300);
 		}
 		xLingkaran += 30;
 	}
+	//Bulat Layer 15
 	xLingkaran = 8;
 	yLingkaran += 14;
 	for (int k = 1; k <= 17; k++) {
@@ -355,14 +368,16 @@ void Render() {
 		}
 		xLingkaran += 30;
 	}
+	//Bulat Layer 16
 	xLingkaran = 22;
 	yLingkaran += 14;
-	for (int k = 1; k <= 17; k++) {
-		if (k >= 1 && k <= 2 || k == 9 || k >= 15 && k <= 17) {
+	for (int k = 1; k <= 16; k++) {
+		if (k >= 1 && k <= 2 || k == 9 || k >= 15 && k <= 16) {
 			Pola5(7, 300);
 		}
 		xLingkaran += 30;
 	}
+	//Bulat Layer 17
 	xLingkaran = 8;
 	yLingkaran += 14;
 	for (int k = 1; k <= 17; k++) {
@@ -371,14 +386,16 @@ void Render() {
 		}
 		xLingkaran += 30;
 	}
+	//Bulat Layer 18
 	xLingkaran = 22;
 	yLingkaran += 14;
-	for (int k = 1; k <= 17; k++) {
-		if (k >= 1 && k <= 2 || k >= 4 && k <= 6 || k >= 8 && k <= 9 || k >= 11 && k <= 13 || k >= 15 && k <= 17) {
+	for (int k = 1; k <= 16; k++) {
+		if (k >= 1 && k <= 2 || k >= 4 && k <= 6 || k >= 8 && k <= 9 || k >= 11 && k <= 13 || k >= 15 && k <= 16) {
 			Pola5(7, 300);
 		}
 		xLingkaran += 30;
 	}
+	//Bulat Layer 19
 	xLingkaran = 8;
 	yLingkaran += 14;
 	for (int k = 1; k <= 17; k++) {
@@ -387,14 +404,16 @@ void Render() {
 		}
 		xLingkaran += 30;
 	}
+	//Bulat Layer 20
 	xLingkaran = 22;
 	yLingkaran += 14;
 	for (int k = 1; k <= 17; k++) {
-		if (k >= 1 && k <= 2 || k == 9 || k == 12 || k >= 15 && k <= 17) {
+		if (k >= 1 && k <= 2 || k == 9 || k == 12 || k >= 15 && k <= 16) {
 			Pola5(7, 300);
 		}
 		xLingkaran += 30;
 	}
+	//Bulat Layer 21
 	xLingkaran = 8;
 	yLingkaran += 14;
 	for (int k = 1; k <= 17; k++) {
@@ -402,7 +421,127 @@ void Render() {
 			Pola5(7, 300);
 		}
 		xLingkaran += 30;
+	}//Bulat Layer 22
+	xLingkaran = 22;
+	yLingkaran += 14;
+	for (int k = 1; k <= 16; k++) {
+		if (k == 1 || k == 7 || k == 12 ||k == 16 ) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
 	}
+	//Bulat Layer 23
+	xLingkaran = 8;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 2 || k == 6 || k >= 16 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	//Bulat Layer 24
+	xLingkaran = 22;
+	yLingkaran += 14;
+	for (int k = 1; k <= 16; k++) {
+		if (k >= 1 && k <= 2 || k == 5 || k == 12 || k >= 15 && k <= 16) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	//Bulat Layer 25
+	xLingkaran = 8;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 3 || k >= 5 && k <= 6 || k >= 8 && k <= 10 || k >= 12 && k <= 13 || k >= 15 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	//Bulat Layer 26
+	xLingkaran = 22;
+	yLingkaran += 14;
+	for (int k = 1; k <= 16; k++) {
+		if (k >= 1 && k <= 3 || k >= 5 && k <= 6 || k >= 8 && k <= 9 || k == 12 || k >= 15 && k <= 16) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	//Bulat Layer 27
+	xLingkaran = 8;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 2 || k == 6 || k == 9 || k == 12 || k >= 16 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	//Bulat Layer 28
+	xLingkaran = 22;
+	yLingkaran += 14;
+	for (int k = 1; k <= 16; k++) {
+		if (k == 1 || k == 12 || k == 16) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	//Bulat Layer 29
+	xLingkaran = 8;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 2 || k == 4 || k == 11 || k == 14 || k >= 16 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	//Bulat Layer 30
+	xLingkaran = 22;
+	yLingkaran += 14;
+	for (int k = 1; k <= 16; k++) {
+		if (k >= 1 && k <= 2|| k >= 15 && k <= 16) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	//Bulat Layer 31
+	xLingkaran = 8;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 3|| k == 6 || k == 9 || k >= 16 && k <= 17) {
+			Pola5(7, 300); 
+		}
+		xLingkaran += 30;
+	}
+	//Bulat Layer 32
+	xLingkaran = 22;
+	yLingkaran += 14;
+	for (int k = 1; k <= 16; k++) {
+		if (k >= 1 && k <= 2 || k >= 4 && k <= 6 || k >= 8 && k <= 9 || k >= 11 && k <= 13 ||k >= 15 && k <= 16) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	//Bulat Layer 33
+	xLingkaran = 8;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		Pola5(7, 300);
+		xLingkaran += 30;
+	}
+	//Bulat Layer 34
+	xLingkaran = 52;
+	yLingkaran += 14;
+	for (int k = 1; k <= 14; k++) {
+		Pola5(7, 300);
+		xLingkaran += 30;
+	}
+	//Bulat Layer 35
+	xLingkaran = 38;
+	yLingkaran += 14;
+	for (int k = 1; k <= 15; k++) {
+		Pola5(7, 300);
+		xLingkaran += 30;
+	}
+
 	xLingkaran = 35;
 	yLingkaran = 12;
 	glFlush();
