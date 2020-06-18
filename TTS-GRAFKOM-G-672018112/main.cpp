@@ -9,7 +9,7 @@ int xLingkaran = 35;
 int yLingkaran = 12;
 
 void Pola1() {
-	glColor3ub(255, 238, 204);
+	glColor3ub(255, 222, 173);
 	glBegin(GL_POLYGON);
 	//Kotak Putih
 	glVertex2f(51 + x, 121 + y);
@@ -48,7 +48,7 @@ void Pola1() {
 }
 
 void Pola2() {
-	glColor3ub(255, 238, 204);
+	glColor3ub(255, 222, 173);
 	glBegin(GL_POLYGON);
 
 	//Kotak Putih
@@ -90,7 +90,7 @@ void Pola2() {
 }
 
 void Pola3() {
-	glColor3ub(255, 238, 204);
+	glColor3ub(255, 222, 173);
 	glPointSize(2);
 	glBegin(GL_POLYGON);
 
@@ -134,7 +134,7 @@ void Pola3() {
 }
 
 void Pola4() {
-	glColor3ub(255, 238, 204);
+	glColor3ub(255, 222, 173);
 	glPointSize(0.000001f);
 	glBegin(GL_POINTS);
 
@@ -152,7 +152,7 @@ void Pola5(double r, int vertex) {
 	double ngon = (double)vertex;
 	//Algoritma Orbit
 	glBegin(GL_LINE_LOOP);
-	glColor3ub(103, 103, 103);
+	glColor4ub(103, 103, 103, 100);
 	for (int i = 0; i < vertex; i++) {
 		double a = r * cos(2 * M_PI * i / vertex);
 		double b = r * sin(2 * M_PI * i / vertex);
@@ -161,9 +161,11 @@ void Pola5(double r, int vertex) {
 	glEnd();
 }
 
+
 void Render() {
 	glClearColor(0, 0, 0, 1);
 	glClear(GL_COLOR_BUFFER_BIT);
+
 	//Layer 1
 	Pola1();
 	Pola2();
@@ -289,6 +291,118 @@ void Render() {
 		}
 		xLingkaran += 30;
 	}
+	xLingkaran = 22;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k == 1|| k == 7 || k ==  10 || k == 12||k >= 16 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	xLingkaran = 8;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <=2|| k == 6 || k == 12 || k >= 16 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	xLingkaran = 22;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 2 || k >= 5 && k <= 6|| k >= 8 && k <= 9 ||k == 12 || k >= 15 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	xLingkaran = 8;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 3 || k >= 5 && k <= 6 || k >= 8 && k <= 10 || k >= 12 && k <= 13 || k >= 15 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	xLingkaran = 22;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 2 || k == 5 || k >= 8 && k <= 9 || k == 12 || k >= 15 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	xLingkaran = 8;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 2 || k == 6 ||  k == 12 || k >= 16 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	xLingkaran = 22;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k == 1 || k == 12 || k >= 16 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	xLingkaran = 8;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 2 || k == 4 || k == 11 || k == 14|| k >= 16 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	xLingkaran = 22;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 2 || k == 9 || k >= 15 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	xLingkaran = 8;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 3 || k == 6 || k == 9 || k >= 12 && k <= 13 ||k >= 16 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	xLingkaran = 22;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 2 || k >= 4 && k <= 6 || k >= 8 && k <= 9 || k >= 11 && k <= 13 || k >= 15 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	xLingkaran = 8;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 3 || k >= 5 && k <= 6 || k == 9|| k >= 12 && k <= 13 || k >= 16 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	xLingkaran = 22;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 2 || k == 9 || k == 12 || k >= 15 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
+	xLingkaran = 8;
+	yLingkaran += 14;
+	for (int k = 1; k <= 17; k++) {
+		if (k >= 1 && k <= 2 || k >= 16 && k <= 17) {
+			Pola5(7, 300);
+		}
+		xLingkaran += 30;
+	}
 	xLingkaran = 35;
 	yLingkaran = 12;
 	glFlush();
@@ -297,12 +411,17 @@ void Render() {
 int main(int argc, char** argv) {
 	//Inisialisasi Program
 	glutInit(&argc, argv);
-	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGBA | GLUT_MULTISAMPLE);
 	glutInitWindowSize(500, 500);
 	glutCreateWindow("Sean Alessandro Pattirane - 672018112");
 	glutDisplayFunc(Render);
-	glEnable(GL_POINT_SMOOTH);
 	gluOrtho2D(0, 500, 500, 0);
+	glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	glEnable(GL_LINE_SMOOTH);
+	glEnable(GL_POINT_SMOOTH);
+	glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
+	glHint(GL_POINT_SMOOTH_HINT, GL_NICEST);
 	//Selesai Inisialisasi
 	glutMainLoop();
 }
